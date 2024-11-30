@@ -1,0 +1,12 @@
+server:
+  port: 8888
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bookmanage?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+mybatis:
+  mapper-locations: classpath:mapper/*.xml      # Mapper XML 文件的路径
+  type-aliases-package: com.example.bookmanage.pojo.entity # 实体类包路径（可选）
